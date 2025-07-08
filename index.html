@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathability Academy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav id="nav">
+        <a href="index.html"
+          ><img class="logo" src="images/mathability-logo.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Anasayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="course.html">EĞİTİMLERİMİZ</a></li>
+            <!-- <li><a href="blog.html.html">Özel Ders</a></li> -->
+            <li><a href="contact.html">İLETİŞİM</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Yeni nesile uygun sınava yönelik</h1>
+        <p>
+          canlı bootcamp ve özel dersler ile matematik hiç olmadığı kadar kolay
+        </p>
+
+        <a href="contact.html" class="hero-btn">Bizimle iletişime Geçin</a>
+      </div>
+    </section>
+
+    <!-- ------------------------------Course Section--------------------------------------------- -->
+    <div class="course-container">
+      <section class="course">
+        <h1 class="welcomeText">Mathability Akademi'ye Hoş Geldiniz!</h1>
+        <br />
+        <div class="info-text">
+          <p id="typed-text"></p>
+        </div>
+        <div class="img-box">
+          <img src="./images/mathability-logo.png" alt="" />
+        </div>
+
+        <h1>Matematiği Bizimle Keşfedin Hızla Öğrenin ve Başarıya Ulaşın!</h1>
+        <p>
+          <span>Hedefimiz:</span>
+
+          Matematiksel düşünme becerilerinizi geliştirerek, sizi sadece
+          sınavlarda değil, hayatın her alanında başarılı kılmak. Mathability
+          Akademi, online matematik eğitiminde yeni bir dönem başlatıyor. Gelin,
+          Mathability Akademi ailesine katılın ve matematiğin sihirli dünyasında
+          birlikte yolculuk edelim!
+        </p>
+
+        <div class="row">
+          <div class="course-col">
+            <h3>
+              Yoğun ve etkili TYT AYT <br />
+              bootcamp programları
+            </h3>
+            <div class="text-container" id="text1">
+              <p>
+                Kısa sürede matematik netlerinizi zirveye taşımak mı
+                istiyorsunuz? Mathability Akademi'nin yoğunlaştırılmış bootcamp
+                programları tam size göre! TYT-AYT de diğer konulara kıyasla
+                daha çok zorlanılan konulara yoğunlaşmak isteyen öğrencilerimiz
+                için özel bootcamp programları hazırladık. Her bootcamp, sıkı
+                bir müfredat ve ÖSYM tipi soru çözümüne dayalı dersler ile,
+                öğrencilerin konunun temelini hızlıca kavrayıp, sınavlarda
+                başarılı olabilmesi için tasarlanmıştır. Bu eğitimler canlı
+                video dersler, uygulamalı testler ve canlı soru-cevap seansları
+                ile desteklenecektir. Öğrencilerimiz bu şekilde yeni nesil soru
+                tiplerine karşı hazırlıklı olurlar ve gerçek sınav koşullarında
+                pratik yapma fırsatı bulurlar.
+              </p>
+              <span class="read-more" onclick="toggleText(this)">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="course-col">
+            <h3>Her seviyeye özel online matematik ve geometri dersleri</h3>
+            <div class="text-container" id="text2">
+              <p>
+                Hayalinizdeki liseye veya üniversiteye giden yolda size eşlik
+                ediyoruz! LGS-TYT-AYT sınavlarına hazırlanan her seviyeden
+                öğrenciye özel ders imkanı sunuyoruz. Sınav sistemine hakim,
+                deneyimli ve alanında uzman eğitmenler ile evinizin konforunda
+                öğrencinin öğrenme hızına göre düzenlenen birebir dersler ile
+                başarıya ulaşıyoruz. Derslerimizde ilk olarak konunun mantığını
+                anlatarak ardından yeni nesil soru çözüm teknikleri, sınav
+                stratejileri ve deneme sınavlarıyla sınava tam olarak
+                hazırlıyoruz. Öğrencinin motivasyonunu her daim yüksek tutarak,
+                sınav kaygısını azaltması için yanında oluyoruz.
+              </p>
+              <span class="read-more" onclick="toggleText(this)">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+          </div>
+          <div class="course-col">
+            <h3>
+              Üniversite öğrencilerine özel <br />
+              vize ve final desteği
+            </h3>
+            <div class="text-container" id="text3">
+              <p>
+                Üniversite hayatının getirdiği sınav stresiyle başa çıkmakta
+                zorlanıyor musunuz? Mathability Akademi olarak, vize ve final
+                sınavlarınıza yönelik özel derslerle yanınızdayız! 4 yıl boyunca
+                üniversitede öğrenci asistanlığı yapmış deneyimli eğitmenimizle
+                , öğrencilerin sınav süreçlerindeki zorluklarını yakından
+                biliyor ve onlara en etkili şekilde destek oluyoruz.Vize ve
+                final sınavlarına yönelik özel olarak hazırlanmış ders
+                içerikleri ile sınav başarınızı en üst seviyeye çıkarıyoruz.
+              </p>
+              <span class="read-more" onclick="toggleText(this)">
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- -------------------------------------------Campus----------------------------------------------- -->
+
+    <section class="campus">
+      <a href="course.html"><h1>Eğitimlerimiz</h1></a>
+      <div class="campus-text">
+        <p>
+          Mathability Akademi, online matematik eğitiminde yeni bir dönem
+          başlatıyor ve dünyanın her yerinden öğrencilere ulaşıyor. Matematiği
+          hedeflerinize giden yolda sorun olmaktan çıkarmak için
+          eğitimlerimizden birini seçin.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images3/pexels-anna-nekrashevich-8534460.jpg" />
+          <div class="layer">
+            <h3>Trigonometri Bootcamp</h3>
+            <img
+              src="./images/mathability-logo.png"
+              alt=""
+              style="width: 120px; height: 70px; border-radius: 70%"
+            />
+            <a href="contact.html" class="edu-btn">Detaylı Bilgi Al</a>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images3/pexels-anna-nekrashevich-8532637.jpg" />
+          <div class="layer">
+            <h3>Limit-Türev Bootcamp</h3>
+            <img
+              src="./images/mathability-logo.png"
+              alt=""
+              style="width: 120px; height: 70px; border-radius: 70%"
+            />
+            <a href="contact.html" class="edu-btn">Detaylı Bilgi Al</a>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images3/pexels-sora-shimazaki-5668833.jpg" />
+          <div class="layer">
+            <h3>TYT problemler Bootcamp</h3>
+            <img
+              src="./images/mathability-logo.png"
+              alt=""
+              style="width: 120px; height: 70px; border-radius: 70%"
+            />
+            <a href="contact.html" class="edu-btn">Detaylı Bilgi Al</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images3/pexels-annpoan-5799379.jpg" />
+          <div class="layer">
+            <h3>
+              LGS-TYT-AYT Matematik <br />
+              özel ders
+            </h3>
+            <img
+              src="./images/mathability-logo.png"
+              alt=""
+              style="width: 120px; height: 70px; border-radius: 70%"
+            />
+            <a href="contact.html" class="edu-btn">Detaylı Bilgi Al</a>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images3/pexels-cup-of-couple-6177610 (1).jpg" />
+          <div class="layer">
+            <h3>LGS-TYT-AYT Geometri <br />özel ders</h3>
+            <img
+              src="./images/mathability-logo.png"
+              alt=""
+              style="width: 120px; height: 70px; border-radius: 70%"
+            />
+            <a href="contact.html" class="edu-btn">Detaylı Bilgi Al</a>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images3/pexels-gabby-k-6373305.jpg" />
+          <div class="layer">
+            <h3>Üniversite Matematik Derslerinde özel ders</h3>
+            <img
+              src="./images/mathability-logo.png"
+              alt=""
+              style="width: 120px; height: 70px; border-radius: 70%"
+            />
+            <a href="contact.html" class="edu-btn">Detaylı Bilgi Al</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------Facilities---------------------------------- -->
+
+    <section class="facilities">
+      <h1>Neden Mathability Academy?</h1>
+      <p class="why-us">
+        Eğitim anlayışımız, her öğrencinin bireysel ihtiyaçlarına göre
+        özelleştirilmiş bir yaklaşım sunmaktır. Matematik, her seviyeden
+        öğrenciyi farklı seviyelere taşıyabilecek bir güçtür ve biz, bu gücü
+        sizinle paylaşmak için buradayız. Her seviyedeki öğrencilere yönelik
+        sunduğumuz online matematik dersleri, kaliteli içerik ve öğrenci odaklı
+        bir yöntemle hazırlanmıştır. Sadece sınav başarılarını arttırmak değil,
+        aynı zamanda matematiğin temel prensiplerine sağlam bir temel atmak için
+        çaba harcıyoruz. Matematik, sadece bir ders değil, aynı zamanda hayatı
+        anlama ve çözme şeklidir. Hayat boyu öğrenmeye ve gelişmeye inanan bir
+        ekibiz ve sizlere her adımda destek olmayı dört gözle bekliyoruz.
+      </p>
+
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images2/pexels-n-voitkevich-6863262.jpg" />
+          <h3>Sınav Başarısının Anahtarı Mathability Akademi'de!</h3>
+          <p class="tanıtım">
+            <span> Her Seviyeye Uygun Eğitim:</span> <br />
+            Öğrencinin ihtiyacına özel hazırlanmış online ders içerikleri.
+            <br />
+            <span> Öğrenci Odaklı Eğitim Anlayışı:</span> <br />Uzman
+            eğitmenlerimiz ile dersler tamamen öğrenciyi derse dahil edecek
+            şekilde tasarlanmıştır. <br />
+            <span>Kişiye Özel Ders Programı:</span> <br />
+            Öğrencinin öğrenme hızına göre düzenlenen birebir dersler. <br />
+            <span>TYT-AYT Odaklı Çalışma Teknikleri:</span> <br />
+            Ösym tipi soruların çözümü ve analizleriyle eksiklerin tespitiyle
+            tam hazırlık. <br />
+            <span>Başarı Odaklı Yaklaşım:</span> <br />
+            Öğrencinin motivasyonunu yüksek tutarak, hedeflediği başarıya
+            ulaşmasını sağlamak.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images2/pexels-karolina-grabowska-6345305.jpg" />
+          <h3>
+            Matematikte Hızlı ve Etkili Çözümler: Mathability Akademi
+            Bootcamp'leri!
+          </h3>
+          <p class="tanıtım">
+            <span>Yoğunlaştırılmış Özel Gruplar ile Eğitim: </span
+            >Öğrencilerimiz 2 hafta boyunca sadece bir konu üzerinde
+            yoğunlaşarak en verimli şekilde öğrenme fırsatı bulur. <br />
+            <span>Esnek Zaman Planı:</span> <br />
+            Eğitimler tamamen online olduğu için, öğrenciler diledikleri zaman
+            derslere erişebilir ve kendi hızlarında çalışabilirler. <br />
+            <span> Canlı Destek:</span> <br />
+            Program süresince öğrencilerimize soru-cevap seansları sunuyoruz.
+            Sorularınızı anında çözme ve anlamadığınız noktaları derinlemesine
+            keşfetme şansı tanır. <br />
+            <span>Kapsamlı Materyaller:</span> <br />
+            Ders içeriklerimiz, öğrenciyi gerçek sınava hazırlayan güncel kaynak
+            kitapların pdfleri ve ösym tipi soruların çözümlerini içerir.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <img src="images2/pexels-mikhail-nilov-6893338.jpg" />
+          <h3>
+            Üniversite Sınavlarına Profesyonel Destek: Vize ve Finallerde Başarı
+            Sizinle!
+          </h3>
+          <p class="tanıtım">
+            <span> Öğrenci Asistanlığı Deneyimi:</span> <br />4 yıl boyunca
+            üniversitede öğrenci asistanlığı yapmış bir eğitmen olarak,
+            öğrencilerin sınav süreçlerindeki zorluklarını yakından biliyor ve
+            onlara destek oluyorum. <br />
+            <span>Sınav Odaklı Eğitim:</span> <br />
+            Vize ve final sınavlarına yönelik özel olarak hazırlanmış ders
+            içerikleri <br />
+            <span>Not Ortalamasını Önemseyen Yaklaşım:</span> <br />
+            Test sisteminden üniversiteye başlayan öğrencilere yüksek harf
+            notları almaları için matematiğin nasıl yazılması gerektiğini nasıl
+            puan kaybettiklerini detaylı şekilde aktarıyoruz.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------Testimonials------------------------------------------- -->
+
+    <section class="testimonials">
+      <h1>Öğrenci Yorumları</h1>
+
+      <div class="row">
+        <div class="buttons-box">
+          <button onclick="prevTestimonial()">&lt;&lt;&lt;</button>
+        </div>
+
+        <div class="testimonials-col">
+          <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+
+          <div>
+            <p id="testimonial"></p>
+          </div>
+
+          <div class="icon-author">
+            <div class="icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.866 0-7 3.134-7 7h14c0-3.866-3.134-7-7-7z"
+                />
+              </svg>
+            </div>
+            <h3 id="author"></h3>
+          </div>
+        </div>
+
+        <div class="buttons-box">
+          <button onclick="nextTestimonial()">&gt;&gt;&gt;</button>
+        </div>
+      </div>
+    </section>
+
+    <!--*************************** Numbers **********************************-->
+
+    <section class="numbers">
+      <!-- single number -->
+      <article>
+        <span class="number" data-value="12"></span>
+        <p>Yıllık Tecrübe</p>
+      </article>
+      <article>
+        <span class="number" data-value="48">0</span>
+        <p>TYT-AYT öğrencisi</p>
+      </article>
+      <article>
+        <span class="number" data-value="14">0</span>
+        <p>Üniversite Öğrencisi</p>
+      </article>
+
+      <!-- end of single number -->
+    </section>
+    <!-- ----------------------------------------Call to Action------------------------------------------ -->
+
+    <section class="cta">
+      <h1>
+        Dünyanın herhangi bir yerinden her seviyeye uygun özel derslerimiz ve
+        bootcamp programlarımıza <br />
+        katılabilirsiniz.
+      </h1>
+      <a href="contact.html" class="hero-btn">Bizimle iletişime Geçin</a>
+    </section>
+
+    <!-- -----------------------------------------------------Footer----------------------------------------------- -->
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <h3>İletişim Bilgileri</h3>
+          </div>
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>ANKARA</h5>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+905066316427</h5>
+              <p></p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>mathabilityacademy@gmail.com</h5>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form action="https://formspree.io/f/mzzrrywo" method="POST">
+            <input
+              type="text"
+              name="name"
+              placeholder="Adınız Soyadınız"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Adresiniz"
+              required
+            />
+            <label for="phone"></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="05xx xxx xx xx"
+              pattern="[0-9]{10,11}"
+              required
+            />
+            <select name="subject" required>
+              <option value="">İlgilendiğiniz Eğitim</option>
+              <option value="LGS-TYT-AYT Matematik Özel Ders">
+                LGS-TYT-AYT Matematik Özel Ders
+              </option>
+              <option value="LGS-TYT-AYT Geometri Özel Ders">
+                LGS-TYT-AYT Geometri Özel Ders
+              </option>
+              <option value="Problemler Bootcamp">Problemler Bootcamp</option>
+              <option value="Trigonometri Bootcamp">
+                Trigonometri Bootcamp
+              </option>
+              <option value="Limit-Türev Bootcamp">Limit-Türev Bootcamp</option>
+              <option value="Üniversite Matematik Özel Ders">
+                Üniversite Matematik Özel Ders
+              </option>
+              <option value="Diğer">Diğer</option>
+            </select>
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Mesajınız"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-div">
+        <a href="index.html"
+          ><img class="logo" src="images/mathability-logo.png"
+        /></a>
+        <!-- <img src="./images/mathability-logo.png" alt="" /> -->
+        <p>
+          Biz, matematiğin gücünü keşfetmek isteyen herkes için özelleştirilmiş
+          dersler sunan bir online eğitim platformuyuz. Amacımız, öğrencilerin
+          matematiğe olan sevgilerini artırarak, bu alandaki derinlikli bilgiye
+          bizimle birlikte ulaşmalarını sağlamaktır.
+        </p>
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+        <a href="#nav" class="scroll-link top-link"
+          ><i class="fas fa-arrow-up"></i
+        ></a>
+      </div>
+      <div class="info-div">
+        <div class="corporate">
+          <a href=""><h3>kurumsal</h3></a>
+
+          <a href="#">Anasayfa</a>
+          <a href="#">Hakkımızda</a>
+          <a href="#">Eğitimlerimiz</a>
+          <a href="#">İletişim</a>
+        </div>
+        <div class="services">
+          <a href="course.html"><h3>Eğitimlerimiz</h3></a>
+
+          <a href="#">LGS-TYT-AYT Matematik Özel Ders</a>
+          <a href="#">LGS-TYT-AYT Geometri Özel Ders</a>
+          <a href="#">Problemler Bootcamp</a>
+          <a href="#">Trigonometri Bootcamp</a>
+          <a href="#">Limit-Türev Bootcamp</a>
+          <a href="#">Üniversite Matematik Özel Ders</a>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</html>
